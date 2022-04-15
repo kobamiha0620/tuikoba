@@ -1,0 +1,94 @@
+
+
+{% layout 'theme.tui' %}
+
+<div id="outerMenu">
+  
+  <main role="main">
+    <div id="container">
+      <div class="secStyle_04 setMrg_27 way">
+        <div class="inner">
+          <section class="secStyle_06">
+            <div class="inner">
+              <h1 class="ttlStyle_08">会社概要</h1>
+              <div class="setMrg_30">
+                <div class="summaryStyle_04">
+                  <div class="dlStyle_01">
+                    <dl>
+                      <dt>会社名</dt>
+                      <dd>株式会社 tui beauty</dd>
+                    </dl>
+                    <dl>
+                      <dt>運営責任者</dt>
+                      <dd>福山　正之</dd>
+                    </dl>
+                    <dl>
+                      <dt>住所</dt>
+                      <dd>〒150-0001<br>東京都渋谷区神宮前5-46-1</dd>
+                    </dl>
+                    <dl>
+                      <dt>電話番号</dt>
+                      <dd><a href="tel:0364271591" class="linkStyle_01">03-6427-1591</a></dd>
+                    </dl>
+                    <dl>
+                      <dt>メールアドレス</dt>
+                      <dd><a href="mailto:info@tui-beauty.com" class="linkStyle_01">info@tui-beauty.com</a></dd>
+                    </dl>
+                    <dl>
+                      <dt>URL</dt>
+                      <dd><a href="https://tui-beauty.com/" class="linkStyle_01">https://tui-beauty.com/</a></dd>
+                    </dl>
+                  </div>
+                  <!-- /.dlStyle_01 -->
+                </div>
+                <!-- /.summaryStyle_04 -->
+              </div>
+              <!-- /.setMrg_30 -->
+            </div>
+            <!-- /.inner -->
+          </section>
+          <!-- /.secStyle_06 -->
+        </div>
+        <!-- /.inner -->
+      </div>
+      <!-- /.secStyle_04 -->
+    </div>
+    <!-- /#container -->
+  </main>
+  
+  
+  {% include 'footer-tui' %}
+  
+</div>
+<!-- /#outerMenu -->
+</div>
+<!-- /#wrapper -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+
+<script src="{{ 'master.js' | asset_url }}" type="text/javascript"></script>
+
+
+<script>
+  $(function() {
+    
+    
+    
+  });
+</script>
+
+<script type="application/json" data-cart-routes>
+  {
+    "cartUrl": "{{ routes.cart_url }}",
+    "cartAddUrl": "{{ routes.cart_add_url }}",
+    "cartChangeUrl": "{{ routes.cart_change_url }}"
+  }
+</script>
+
+<ul hidden>
+  <li id="a11y-refresh-page-message">{{ 'general.accessibility.refresh_page' | t }}</li>
+  <li id="a11y-selection-message">{{ 'general.accessibility.selection_help' | t }}</li>
+</ul>
+
+
+

@@ -1,0 +1,113 @@
+
+
+{% layout 'theme.tui' %}
+
+<div id="outerMenu">
+  
+  <main role="main">
+    <div id="container">
+      <div class="secStyle_04 setMrg_26 way">
+        <div class="inner">
+          <div class="secStyle_05">
+            
+            {% if blog.all_tags.size > 0 %}
+            <div class="navStyle_01">
+              <nav>
+                <ul>
+                  <li><a href="{{ routes.root_url }}blogs/news/">ALL</a></li>
+                  {% for tag in blog.all_tags %}
+                  {% if current_tags contains tag %}
+                  <li><a href="javascript:void(0);" class="current">{{ tag }}</a></li>
+                  {% else %}
+                  <li>{{ tag | link_to_tag: tag }}</li>
+                  {% endif %}
+                  {% endfor %}
+                </ul>
+              </nav>
+            </div>
+            <!-- /.navStyle_01 -->
+            {% endif %}
+            
+            <div class="inner">
+              <div class="articleWrap_02">
+                
+                {% for article in blog.articles %}
+                <article class="articleStyle_04">
+                  <div class="inner">
+                    <div class="col-ttl">
+                      <h2>{{ article.title }}</h2>
+                      <div class="subInfo">
+                        <p class="upDate">{{ article.published_at | time_tag: '%Y.%m.%d' }}</p>
+                        <ul class="category">
+                          {% for tag in article.tags %}
+                          <li>{{ tag }}</li>
+                          {% endfor %}
+                        </ul>
+                        <!-- /.category -->
+                      </div>
+                      <!-- /.subInfo -->
+                    </div>
+                    <!-- /.col-ttl -->
+                    <div class="col-content">
+                      <div class="postWrap">
+                        {{ article.content }}
+                      </div>
+                      <!-- /.postWrap -->
+                    </div>
+                    <!-- /.col-content -->
+                  </div>
+                  <!-- /.inner -->
+                </article>
+                <!-- /.articleStyle_04 -->
+                {% endfor %}
+                
+              </div>
+              <!-- /.articleWrap_02 -->
+            </div>
+            <!-- /.inner -->
+          </div>
+          <!-- /.secStyle_05 -->
+        </div>
+        <!-- /.inner -->
+      </div>
+      <!-- /.secStyle_04 -->
+    </div>
+    <!-- /#container -->
+  </main>
+  
+  
+  {% include 'footer-tui' %}
+  
+</div>
+<!-- /#outerMenu -->
+</div>
+<!-- /#wrapper -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+
+<script src="{{ 'master.js' | asset_url }}" type="text/javascript"></script>
+
+
+<script>
+  $(function() {
+    
+    
+    
+  });
+</script>
+
+<script type="application/json" data-cart-routes>
+  {
+    "cartUrl": "{{ routes.cart_url }}",
+    "cartAddUrl": "{{ routes.cart_add_url }}",
+    "cartChangeUrl": "{{ routes.cart_change_url }}"
+  }
+</script>
+
+<ul hidden>
+  <li id="a11y-refresh-page-message">{{ 'general.accessibility.refresh_page' | t }}</li>
+  <li id="a11y-selection-message">{{ 'general.accessibility.selection_help' | t }}</li>
+</ul>
+
+
+

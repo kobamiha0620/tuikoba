@@ -1,0 +1,330 @@
+
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#" lang="{{ request.locale.iso_code }}>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script type="text/javascript">
+  var _ua = (function(u){
+    return {
+      Tablet:(u.indexOf("windows") != -1 && u.indexOf("touch") != -1)
+        || u.indexOf("ipad") != -1
+        || (u.indexOf("android") != -1 && u.indexOf("mobile") == -1)
+        || (u.indexOf("firefox") != -1 && u.indexOf("tablet") != -1)
+        || u.indexOf("kindle") != -1
+        || u.indexOf("silk") != -1
+        || u.indexOf("playbook") != -1,
+      Mobile:(u.indexOf("windows") != -1 && u.indexOf("phone") != -1)
+        || u.indexOf("iphone") != -1
+        || u.indexOf("ipod") != -1
+        || (u.indexOf("android") != -1 && u.indexOf("mobile") != -1)
+        || (u.indexOf("firefox") != -1 && u.indexOf("mobile") != -1)
+        || u.indexOf("blackberry") != -1
+    }
+  })(window.navigator.userAgent.toLowerCase());
+  if(_ua.Mobile){
+  	document.write('<meta name="viewport" content="width=device-width,initial-scale=1.0">');
+  }else{
+  	document.write('<meta name="viewport" content="width=1280">');
+  }
+  </script>
+  
+  <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+  <link rel="preconnect" href="https://monorail-edge.shopifysvc.com">
+
+  {%- if canonical_url != blank  -%}
+    <link rel="canonical" href="{{ canonical_url }}">
+  {%- endif -%}
+  {%- if settings.favicon != blank -%}
+    <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
+  {%- endif -%}
+  {%- capture seo_title -%}
+    {%- if request.page_type == 'search' and search.performed == true -%}
+      {{ 'general.search.heading' | t: count: search.results_count }}: {{ 'general.search.results_with_count' | t: terms: search.terms, count: search.results_count }}
+    {%- else -%}
+      {{ page_title }}
+    {%- endif -%}
+    {%- if current_tags -%}
+      {%- assign meta_tags = current_tags | join: ', ' -%} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags -}}
+    {%- endif -%}
+    {%- if current_page != 1 -%}
+      &ndash; {{ 'general.meta.page' | t: page: current_page }}
+    {%- endif -%}
+    {%- assign escaped_page_title = page_title | escape -%}
+    {%- unless escaped_page_title contains shop.name -%}
+      &ndash; {{ shop.name }}
+    {%- endunless -%}
+  {%- endcapture -%}
+  <title>{{ seo_title | strip }}</title>
+  {%- if page_description -%}
+    <meta name="description" content="{{ page_description | escape }}">
+  {%- endif -%}
+  {% include 'social-meta-tags' %}
+  {% include 'css-variables' %}
+  {%- if request.page_type contains 'customers/' -%}
+    <script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer="defer"></script>
+  {%- endif -%}
+  
+
+  <meta http-equiv="content-script-type" content="text/javascript">
+  <meta name="format-detection" content="telephone=no">
+  <script type="text/javascript">
+    if (window.MSInputMethodContext && document.documentMode) {
+      var scripts = document.getElementsByTagName('script')[0];
+      var polyfill = document.createElement("script");
+      polyfill.defer = true;
+      polyfill.src = "{{ 'ie11CustomProperties.min.js' | asset_url }}";
+
+      scripts.parentNode.insertBefore(polyfill, scripts);
+    }
+  </script>
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'uct3tdv',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+  <link rel="stylesheet" href="https://use.typekit.net/tfo5tsn.css">
+  
+  <link rel="stylesheet" type="text/css" media="all" href="{{ 'main.css' | asset_url }}">
+  
+  
+</head>
+
+<body class="template-{{ request.page_type | handle }}">
+  <div id="loading"></div>
+  <div class="cursor"></div>
+  <div class="follower"></div>
+  <div id="wrapper" class="
+  {% if template == 'index' %}
+  home
+  {% elsif template == 'blog' %}
+  news
+  {% endif %}
+  {% if template == 'product.booster-oil' %}
+  product_01 detail-product
+  {% elsif template == 'product.moisture-serum' %}
+  product_02 detail-product
+  {% elsif template == 'product.moisture-serum-s' %}
+  product_02 detail-product
+  {% elsif template == 'product.set-package' %}
+  product_03 detail-product
+  {% elsif template == 'product.set-package-s' %}
+  product_03 detail-product
+  {% elsif page.handle == 'about' %}
+  about
+  {% elsif page.handle == 'faq' %}
+  faq
+  {% elsif page.handle == 'contact' %}
+  products
+  {% elsif page.handle == 'products' %}
+  products
+  {% elsif page.handle == 'privacy-policy' %}
+  privacy
+  {% elsif page.handle == 'sctl' %}
+  sctl
+  {% elsif page.handle == 'rule' %}
+  rule
+  {% elsif page.handle == 'company' %}
+  company
+  {% endif %}
+  ">
+    <div id="clickBlocker"></div>
+
+
+<header>
+  <div class="inner">
+    <div class="col-logo">
+      <p class="logo tx headMenu">
+        
+        <a href="{{ routes.root_url }}">
+        
+        
+          
+<img data-src="{{ 'logo-tui_01.svg' | file_url }}" alt="tui" class="lazyload">
+
+        
+        </a>
+        
+      </p>
+    </div>
+    <!-- /.col-logo -->
+    
+    <div class="col-nav">
+      <p class="parent"><a href="{{ routes.root_url }}pages/products">View the products</a></p>
+      <div class="productNavWrapper">
+        <ul class="productNav">
+          <li><a href="{{ routes.root_url }}products/booster-oil">BOOSTER OIL</a></li>
+          <li><a href="{{ routes.root_url }}products/moisture-serum">MOISTURE SERUM</a></li>
+          <li><a href="{{ routes.root_url }}products/set-package">SET PACKAGE</a></li>
+          <li><a href="{{ routes.root_url }}pages/products#subscription">SUBSCRIPTION</a></li>
+        </ul>
+        <!-- /.productNav -->
+      </div>
+      <!-- /.productNavWrapper -->
+    </div>
+    <!-- /.col-nav -->
+    
+    <div class="col-iconNav">
+      <ul>
+        <li class="cartNav">
+          
+          <a href="{{ routes.cart_url }}">
+            
+            
+              
+<img data-src="{{ 'icon-cart.svg' | file_url }}" alt="tui" class="lazyload">
+
+            
+          </a>
+          
+        </li>
+        <li>
+          <span class="burgerNav">
+            <span></span>
+            <span></span>
+          </span>
+          <!-- /.burgerNav -->
+        </li>
+      </ul>
+    </div>
+    <!-- /.col-iconNav -->
+  </div>
+  <!-- /.inner -->
+</header>
+<!-- /header -->
+<div class="headMask">
+  <span class="head"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 10 10" style="enable-background:new 0 0 10 10;" xml:space="preserve">
+<path class="st0" d="M10,0H0v10C0,4.5,4.5,0,10,0z"/>
+</svg>
+</span>
+  <span class="head"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 10 10" style="enable-background:new 0 0 10 10;" xml:space="preserve">
+<path class="st0" d="M0,0l10,0v10C10,4.5,5.5,0,0,0z"/>
+</svg>
+</span>
+</div>
+<!-- /.headMask -->
+
+<div id="mainNavSecond">
+  <div class="inner">
+    <div class="cel">
+      <div class="inner">
+        
+        <p class="logoNav">
+          <a href="{{ routes.root_url }}">
+          
+          
+            
+<img data-src="{{ 'logo-tui_01.svg' | file_url }}" alt="tui" class="lazyload">
+
+          
+          </a>
+        </p>
+        
+        <nav>
+        
+        <div class="mainNavSec">
+          <div class="inner">
+            <div class="sec">
+              <p class="ttl"><a href="{{ routes.root_url }}pages/products/">Products</a></p>
+              <ul class="menuNavStyle_01">
+                <li><a href="{{ routes.root_url }}products/booster-oil">BOOSTER OIL</a></li>
+                <li><a href="{{ routes.root_url }}products/moisture-serum">MOISTURE SERUM</a></li>
+                <li><a href="{{ routes.root_url }}products/set-package">SET PACKAGE</a></li>
+                <li><a href="{{ routes.root_url }}pages/products#subscription">SUBSCRIPTION</a></li>
+              </ul>
+            </div>
+            <!-- /.sec -->
+            <ul class="menuNavStyle_02">
+              <li><a href="{{ routes.root_url }}pages/about">About us</a></li>
+              <li><a href="{{ routes.root_url }}blogs/news">News</a></li>
+              <li><a href="{{ routes.root_url }}pages/faq">FAQ</a></li>
+              <li><a href="{{ routes.root_url }}pages/contact">Contact</a></li>
+            </ul>
+            <!-- /.menuNavStyle_01 -->
+          </div>
+          <!-- /.inner -->
+        </div>
+        <!-- /.mainNavSec -->
+        <div class="subNavSec">
+          <ul>
+            <li class="account">
+              <a href="{{ routes.root_url }}account">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<g>
+	<path class="st0" d="M250,220.4c-53.3,0-96.7-43.4-96.7-96.7s43.4-96.7,96.7-96.7s96.7,43.4,96.7,96.7S303.3,220.4,250,220.4z
+		 M250,66.6c-31.5,0-57.2,25.6-57.2,57.2c0,31.5,25.6,57.2,57.2,57.2c31.5,0,57.2-25.6,57.2-57.2C307.2,92.2,281.5,66.6,250,66.6z"
+		/>
+	<path class="st0" d="M46.9,472.9c-0.8,0-1.7,0-2.5-0.2c-10.8-1.4-18.5-11.2-17.1-22.1c14-111.9,109.8-196.3,222.7-196.3
+		c113,0,208.7,84.4,222.7,196.3c1.4,10.8-6.3,20.7-17.1,22.1c-10.9,1.4-20.7-6.3-22.1-17.1C422,363.4,343.1,293.9,250,293.9
+		c-93.1,0-172,69.5-183.5,161.7C65.2,465.6,56.7,472.9,46.9,472.9z"/>
+</g>
+</svg>
+
+              </a>
+            </li>
+            <li class="instagram">
+              <a href="https://www.instagram.com/tui_beauty_official/" target="_blank">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<g>
+	<path class="st0" d="M250,65c60.3,0,67.4,0.2,91.2,1.3c22,1,34,4.7,41.9,7.8c10.5,4.1,18.1,9,26,16.9c7.9,7.9,12.8,15.4,16.9,26
+		c3.1,8,6.8,19.9,7.8,41.9c1.1,23.8,1.3,30.9,1.3,91.2s-0.2,67.4-1.3,91.2c-1,22-4.7,34-7.8,41.9c-4.1,10.5-9,18.1-16.9,26
+		c-7.9,7.9-15.4,12.8-26,16.9c-8,3.1-19.9,6.8-41.9,7.8c-23.8,1.1-30.9,1.3-91.2,1.3s-67.4-0.2-91.2-1.3c-22-1-34-4.7-41.9-7.8
+		c-10.5-4.1-18.1-9-26-16.9c-7.9-7.9-12.8-15.4-16.9-26c-3.1-8-6.8-19.9-7.8-41.9C65.2,317.4,65,310.3,65,250s0.2-67.4,1.3-91.2
+		c1-22,4.7-34,7.8-41.9c4.1-10.5,9-18.1,16.9-26c7.9-7.9,15.4-12.8,26-16.9c8-3.1,19.9-6.8,41.9-7.8C182.6,65.2,189.7,65,250,65
+		 M250,24.3c-61.3,0-69,0.3-93.1,1.4c-24,1.1-40.4,4.9-54.8,10.5c-14.8,5.8-27.4,13.5-40,26c-12.5,12.5-20.3,25.1-26,40
+		c-5.6,14.4-9.4,30.8-10.5,54.8c-1.1,24.1-1.4,31.8-1.4,93.1c0,61.3,0.3,69,1.4,93.1c1.1,24,4.9,40.4,10.5,54.8
+		c5.8,14.8,13.5,27.4,26,40c12.5,12.5,25.1,20.3,40,26c14.4,5.6,30.8,9.4,54.8,10.5c24.1,1.1,31.8,1.4,93.1,1.4s69-0.3,93.1-1.4
+		c24-1.1,40.4-4.9,54.8-10.5c14.8-5.8,27.4-13.5,40-26c12.5-12.5,20.3-25.1,26-40c5.6-14.4,9.4-30.8,10.5-54.8
+		c1.1-24.1,1.4-31.8,1.4-93.1s-0.3-69-1.4-93.1c-1.1-24-4.9-40.4-10.5-54.8c-5.8-14.8-13.5-27.4-26-40c-12.5-12.5-25.1-20.3-40-26
+		c-14.4-5.6-30.8-9.4-54.8-10.5C319,24.6,311.3,24.3,250,24.3L250,24.3z"/>
+	<path class="st0" d="M250,134.1c-64,0-115.9,51.9-115.9,115.9S186,365.9,250,365.9S365.9,314,365.9,250S314,134.1,250,134.1z
+		 M250,325.2c-41.6,0-75.2-33.7-75.2-75.2c0-41.6,33.7-75.2,75.2-75.2s75.2,33.7,75.2,75.2C325.2,291.6,291.6,325.2,250,325.2z"/>
+	<circle class="st0" cx="370.5" cy="129.5" r="27.1"/>
+</g>
+</svg>
+
+              </a>
+            </li>
+            <li class="twitter">
+              <a href="https://twitter.com/tui_beauty" target="_blank">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<path id="XMLID_00000180356314042084761470000007563222073494508968_" class="st0" d="M448.8,148c0.3,4.4,0.3,8.8,0.3,13.3
+	c0,135.6-103.2,291.9-291.9,291.9v-0.1c-55.7,0.1-110.3-15.9-157.2-46c8.1,1,16.3,1.5,24.4,1.5c46.2,0,91.1-15.5,127.4-44
+	c-43.9-0.8-82.4-29.5-95.8-71.2c15.4,3,31.2,2.4,46.3-1.8C54.4,281.9,20,239.8,20,191c0-0.4,0-0.9,0-1.3c14.3,8,30.2,12.4,46.6,12.8
+	c-45.1-30.1-59-90.1-31.8-136.9c52.1,64.1,128.9,103,211.4,107.2c-8.3-35.6,3-73,29.7-98c41.3-38.9,106.3-36.9,145.1,4.5
+	c23-4.5,45-13,65.1-24.9c-7.7,23.8-23.7,43.9-45.1,56.7c20.3-2.4,40.2-7.8,58.9-16.1C486.2,115.5,468.9,133.5,448.8,148z"/>
+</svg>
+
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.subNavSec -->
+        
+        </nav>
+      </div>
+      <!-- /.inner -->
+    </div>
+    <!-- /.cel -->
+  </div>
+  <!-- /.inner -->
+</div>
+<!-- /#mainNav -->
+
+<div class="hiddenParts">
+  {{content_for_header}}
+</div>
+
+{{ content_for_layout }}
+</body>
+</html>
