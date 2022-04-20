@@ -2,6 +2,34 @@
 
 {% layout 'theme.tui' %}
 
+
+<!-- ポップアップ -->
+
+<div id="popup0427" class="modal js-modal">
+  <div class="modal__bg js-modal-close"></div>
+  <div class="modal__content">
+      <span class="js-modal-close modalClose">閉じる</span>
+      <div class="modal__content--pc">
+        <a href="https://tui-beauty.com/blogs/news/campaign">
+          <img src="https://cdn.shopify.com/s/files/1/0605/4281/2419/files/popup_pc01b.png?v=1650423221" alt="イベント">
+        </a>
+        <a href="/products/set-package-mothers">
+          <img src="https://cdn.shopify.com/s/files/1/0605/4281/2419/files/popup_pc02.png?v=1650364089" alt="">
+        </a>
+      </div>
+      <div class="modal__content--sp">
+        <a href="https://tui-beauty.com/blogs/news/campaign">
+          <img src="https://cdn.shopify.com/s/files/1/0605/4281/2419/files/popup_sp01b.png?v=1650423221" alt="イベント">
+        </a>
+        <a href="/products/set-package-mothers">
+          <img src="https://cdn.shopify.com/s/files/1/0605/4281/2419/files/popup_sp02.png?v=1650364087" alt="">
+        </a>
+      </div>
+  </div><!--modal__inner-->
+</div>
+
+
+
 <div id="outerMenu">
   
   <main role="main">
@@ -639,6 +667,5 @@
   <li id="a11y-refresh-page-message">{{ 'general.accessibility.refresh_page' | t }}</li>
   <li id="a11y-selection-message">{{ 'general.accessibility.selection_help' | t }}</li>
 </ul>
-
 
 
