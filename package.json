@@ -1,0 +1,23 @@
+{
+  "name": "tuikoba",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kobamiha0620/tuikoba.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kobamiha0620/tuikoba/issues"
+  },
+  "homepage": "https://github.com/kobamiha0620/tuikoba#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}

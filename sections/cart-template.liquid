@@ -234,12 +234,7 @@
         <div class="grid">
           {%- if section.settings.cart_notes_enable -%}
             <div class="grid__item medium-up--one-half cart-note">
-              {% for item in cart.items %}
-                {% if item.product.id == 7661923107075 %}
-                  <p>母の日セットをご注文の方は、到着指定日をご記入ください。</p>
-                {% endif %}
-              {% endfor %}
-              {% comment %} <label for="CartSpecialInstructions" class="cart-note__label small--text-center">{{ 'cart.general.note' | t }}</label> {% endcomment %}
+              <label for="CartSpecialInstructions" class="cart-note__label small--text-center">{{ 'cart.general.note' | t }}</label>
               <textarea name="note" id="CartSpecialInstructions" class="cart-note__input" data-cart-notes>{{ cart.note }}</textarea>
             </div>
           {%- endif -%}

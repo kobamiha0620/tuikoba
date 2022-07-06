@@ -419,5 +419,12 @@
       "pick_up_available_at_html": "<strong>{{ location_name }}<\/strong>での受取が可能です",
       "pick_up_unavailable_at_html": "<strong>{{ location_name }}<\/strong>での受取は現在できません"
     }
+  },
+  "shopify": {
+    "checkout": {
+      "payment_gateway": {
+        "credit_card_label": "クレジットカード(即時決済)"
+      }
+    }
   }
 }

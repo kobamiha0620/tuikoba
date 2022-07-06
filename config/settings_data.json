@@ -235,7 +235,7 @@
         "type": "cart-template",
         "settings": {
           "cart_ajax_enable": true,
-          "cart_notes_enable": false
+          "cart_notes_enable": true
         }
       }
     },

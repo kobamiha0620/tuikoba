@@ -1,0 +1,77 @@
+{{ 'campaing.css' | asset_url | stylesheet_tag }}
+<div class="para30__header">
+    <p class="para30__subttl"><span>tui × paradise</span></p>
+</div>
+
+<main class="main-content js-focus-hidden" id="MainContent" role="main" tabindex="-1">
+    <style>
+        header {
+            display: none !important
+        }
+
+        footer {
+            display: none !important
+        }
+    </style>
+
+
+
+    <div class="para30__main">
+        <p class="para30__main--ttl"><span>2022/7/10 - 8/31限定 30％＆送料無料</span></p>
+        <p class="para30__main--list">保湿美容に特化したtuiの導入オイル＆＆美容保湿セラム</p>
+        <ul class="para30__main--product">
+            <li>
+                <img src="{{ 'para30_img01.png' | asset_url }}" alt="BOOSTER OIL" width="auto" height="auto"
+                    loading="lazy">
+
+                <a href="https://tuituitui-beauty.myshopify.com/cart/42988719046915:1?channel=buy_button&discount=PARA30"
+                    class="para30__main--cart"><span><span>特別価格で</span>購入する</span></a>
+                <p class="para30__main--pricebox"><img
+                    src="{{ 'para30_price01.svg' | asset_url }}" alt="4,186円" width="auto" height="auto" loading="lazy"
+                        class="para30__main--price"></p>
+            </li>
+            <li>
+                <img src="{{ 'para30_img02.png' | asset_url }}" alt="MOISTURE SERAM" width="auto" height="auto"
+                    loading="lazy">
+
+                <a href="https://tuituitui-beauty.myshopify.com/cart/42988743131395:1?channel=buy_button&discount=PARA30"
+                    class="para30__main--cart"><span><span>特別価格で</span>購入する</span></a>
+                <p class="para30__main--pricebox"><img
+                    src="{{ 'para30_price02.svg' | asset_url }}" alt="3,486円" width="auto" height="auto" loading="lazy"
+                        class="para30__main--price"></p>
+
+            </li>
+            <li>
+
+                <img src="{{ 'para30_img03.png' | asset_url }}" alt="SET PACKAGE" width="auto" height="auto"
+                    loading="lazy">
+
+                <a href="https://tuituitui-beauty.myshopify.com/cart/42988734775555:1?channel=buy_button&discount=PARA30"
+                    class="para30__main--cart"><span><span>特別価格で</span>購入する</span></a>
+                <p class="para30__main--pricebox"><img
+                        src="{{ 'para30_price03.svg' | asset_url }}" alt="7,000円" width="auto" height="auto" loading="lazy"
+                        class="para30__main--price"></p>
+
+            </li>
+        </ul>
+        <div class="para30__main--box">
+            <p class="para30__main--notice">※特別料金＆送料無料でのご提供は、上記購入ボタンからのご購入に限らせていただきます。</p>
+            <p class="para30__main--notice">※決済画面にて、割引後の値段をご確認いただけます。</p>
+            <p class="para30__main--notice">※お一人様1回限りのキャンペーンとさせていただきます。</p>
+        </div>
+    </div>
+
+    <div class="para30__footer">
+        <div class="para30__footer--inner">
+            <div class="para30__footer--links">
+                <a href="{{ routes.root_url }}pages/sctl">特定商取引法に基づく表記</a>
+                <a href="{{ routes.root_url }}pages/company">会社概要</a>
+
+                <a href="{{ routes.root_url }}pages/rule">利用規約</a>
+                <a href="{{ routes.root_url }}pages/privacy-policy">プライバシーポリシー</a>
+            </div>
+            <small class="para30__footer--copy">＠tui beauty</small>
+        </div>
+
+    </div>
+</main>
