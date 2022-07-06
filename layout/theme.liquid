@@ -9,7 +9,9 @@
   <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
   <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
   <link rel="preconnect" href="https://monorail-edge.shopifysvc.com">
-
+  {% if template contains 'campaign' %}
+    <meta name="robots" content="noindex">
+  {% endif %}
   {%- assign header_font = settings.type_header_font -%}
   {%- assign base_font = settings.type_base_font -%}
   {%- assign base_font_bolder = base_font | font_modify: 'weight', 'bolder' -%}
