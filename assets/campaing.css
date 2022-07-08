@@ -193,6 +193,32 @@ footer * {
   margin: 50px 0 100px;
 }
 
+.para30__howto {
+  margin: 0 auto 40px;
+}
+
+.para30__seibun {
+  padding: 30px 40px;
+  border: solid 1px #eee;
+  margin: 0 auto 80px;
+}
+
+.para30__seibun p {
+  line-height: 1.4;
+  font-size: 14px;
+  margin: 10px 0 !important;
+}
+
+.para30__seibun--line {
+  text-decoration: underline;
+  margin: 20px 0 !important;
+  display: inline-block;
+}
+
+.para30__blc {
+  margin: 20px 0;
+}
+
 .para30__footer {
   background: #16234b;
   padding: 50px 0;
@@ -333,5 +359,24 @@ footer * {
     width: 100vw;
     margin: 0 auto;
     padding: 0 10%;
+  }
+  .para30__howto {
+    margin: 0 auto 30px;
+  }
+  .para30__seibun {
+    padding: 20px 10px;
+    margin: 0 auto 60px;
+  }
+  .para30__seibun p {
+    font-size: 12px;
+    margin: 10px 0 !important;
+  }
+  .para30__seibun--line {
+    text-decoration: underline;
+    margin: 20px 0 !important;
+    display: inline-block;
+  }
+  .para30__blc {
+    margin: 20px 0;
   }
 }

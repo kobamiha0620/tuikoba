@@ -1,0 +1,470 @@
+footer html, footer body, footer div, footer span, footer object, footer iframe, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6, footer p, footer blockquote, footer pre, footer abbr, footer address, footer cite, footer code, footer del, footer dfn, footer em, footer img, footer ins, footer kbd, footer q, footer samp, footer small, footer strong, footer sub, footer sup, footer var, footer b, footer i, footer dl, footer dt, footer dd, footer ol, footer ul, footer li, footer fieldset, footer form, footer label, footer legend, footer table, footer caption, footer tbody, footer tfoot, footer thead, footer tr, footer th, footer td, footer article, footer aside, footer canvas, footer details, footer figcaption, footer figure, footer footer, footer header, footer hgroup, footer menu, footer nav, footer section, footer summary, footer time, footer mark, footer audio, footer video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+}
+
+footer article, footer aside, footer details, footer figcaption, footer figure, footer footer, footer header, footer hgroup, footer menu, footer nav, footer section {
+  display: block;
+}
+
+footer nav ul {
+  list-style: none;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer blockquote, footer q {
+  quotes: none;
+}
+
+footer blockquote:before, footer blockquote:after, footer q:before, footer q:after {
+  content: "";
+  content: none;
+}
+
+footer a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: rgba(0, 0, 0, 0);
+}
+
+footer ins {
+  color: #000;
+  text-decoration: none;
+}
+
+footer mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+footer del {
+  text-decoration: line-through;
+}
+
+footer abbr[title], footer dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+footer table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+footer hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+footer input, footer select {
+  vertical-align: middle;
+}
+
+footer * {
+  box-sizing: border-box !important;
+  line-height: 1;
+}
+
+.main-content {
+  padding-top: 0;
+}
+
+.seikyo__header {
+  background: #00a141;
+  padding: 47px 0 78px;
+  width: 100vw;
+  position: relative;
+}
+
+.seikyo__subttl {
+  text-align: center;
+}
+
+.seikyo__subttl span {
+  background: url("https://cdn.shopify.com/s/files/1/0605/4281/2419/files/seikyo_subttl.svg?v=1657178127");
+  background-size: 100% auto;
+  display: inline-block;
+  white-space: nowrap;
+  text-indent: -9999px;
+  width: 603px;
+  height: 29px;
+}
+
+.seikyo__subttl2 {
+  position: absolute;
+  top: 98px;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+}
+
+.seikyo__subttl2 span {
+  background: url("https://cdn.shopify.com/s/files/1/0605/4281/2419/files/seikyo_subttl2.svg?v=1657178428");
+  background-size: 100% auto;
+  display: inline-block;
+  white-space: nowrap;
+  text-indent: -9999px;
+  width: 688px;
+  height: 96px;
+}
+
+.seikyo__main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.seikyo__main--discount {
+  text-align: center;
+  margin: 136px auto 100px;
+}
+
+.seikyo__main--discount span {
+  display: inline-block;
+  max-width: 0 auto;
+  background: url("https://cdn.shopify.com/s/files/1/0605/4281/2419/files/seikyo_discount.svg?v=1657178663");
+  background-size: 100% auto;
+  display: inline-block;
+  white-space: nowrap;
+  text-indent: -9999px;
+  width: 765px;
+  height: 242px;
+}
+
+.seikyo__main--txt {
+  text-align: center;
+  font-weight: bold;
+  color: #444;
+  font-size: 18px;
+  margin-top: 60px;
+}
+
+.seikyo__main--txt2 {
+  text-align: center;
+  color: #444;
+  font-size: 16px;
+}
+
+.seikyo__main--list {
+  display: inline-block;
+  background: url("https://cdn.shopify.com/s/files/1/0605/4281/2419/files/para30_listttl.svg") no-repeat 0 0;
+  background-size: 100% auto;
+  width: 800px;
+  height: 21px;
+  white-space: nowrap;
+  text-indent: -9999px;
+  margin: 0 auto 40px;
+}
+
+.seikyo__main--products {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 80px;
+}
+
+.seikyo__btn {
+  display: block;
+  color: #fff;
+  background: #e0172a;
+  border-radius: 50px;
+  text-decoration: none;
+  margin: 35px 0;
+  text-align: center;
+  font-size: 30px;
+  padding: 23px 0;
+  line-height: 1;
+}
+
+.seikyo__btn:hover {
+  color: #fff !important;
+  opacity: 0.7;
+}
+
+.seikyo__product1 {
+  margin: 0 auto 120px;
+}
+
+.seikyo__product1--price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.seikyo__product1--price01 {
+  width: 48%;
+  max-width: 48%;
+}
+
+.seikyo__product1--btn {
+  width: 50%;
+  max-width: 50%;
+}
+
+.seikyo__product2 {
+  max-width: 380px;
+}
+
+.seikyo__product3 {
+  max-width: 380px;
+}
+
+.seikyo__footer {
+  background: #00a141;
+  padding: 50px 0;
+  width: 100vw;
+}
+
+.seikyo__footer--links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  width: 600px;
+}
+
+.seikyo__footer--links a {
+  display: block;
+  color: #fff;
+}
+
+.seikyo__footer--copy {
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.seikyo__footer--inner {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.seikyo__explain {
+  background: #ff0;
+  width: 100vw;
+  padding: 60px 0 60px;
+}
+
+.seikyo__explain--inner {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.seikyo__note {
+  text-indent: -1em;
+  padding-left: 1em;
+  line-height: 1.4;
+  font-size: 16px;
+  margin: 5px 0 !important;
+}
+
+.seikyo__note2 {
+  line-height: 1.4;
+  font-size: 16px;
+  margin: 5px 0 !important;
+}
+
+.seikyo__note2 a {
+  text-decoration: underline;
+}
+
+.seikyo__note3 {
+  line-height: 1.4;
+  font-size: 16px;
+  margin: 10px 0 !important;
+}
+
+.seikyo__howto {
+  margin: 0 auto 40px;
+}
+
+.seikyo__seibun {
+  padding: 30px 40px;
+  border: solid 1px #eee;
+  margin: 0 auto 80px;
+}
+
+.seikyo__seibun p {
+  line-height: 1.4;
+  font-size: 14px;
+  margin: 10px 0 !important;
+}
+
+.seikyo__seibun--line {
+  text-decoration: underline;
+  margin: 20px 0 !important;
+  display: inline-block;
+}
+
+.seikyo__blc {
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 750px) {
+  .seikyo__header {
+    padding: 5vw 0 7vw;
+    width: 100vw;
+    position: relative;
+  }
+  .seikyo__subttl span {
+    background-size: 100% auto;
+    display: inline-block;
+    width: 75.3vw;
+    height: 3.7vw;
+  }
+  .seikyo__subttl2 {
+    top: 12.25vw;
+  }
+  .seikyo__subttl2 span {
+    background-size: 100% auto;
+    width: 86vw;
+    height: 12vw;
+  }
+  .seikyo__main {
+    max-width: 100vw;
+    padding: 0 5%;
+    margin: 0 auto;
+  }
+  .seikyo__main--txt {
+    font-size: 16px;
+    margin-top: 40px;
+  }
+  .seikyo__main--txt2 {
+    font-size: 14px;
+  }
+  .seikyo__main--discount {
+    text-align: center;
+    margin: 14vw auto;
+  }
+  .seikyo__main--discount span {
+    display: inline-block;
+    background-size: 100% auto;
+    width: 80vw;
+    height: 26vw;
+    background-repeat: no-repeat;
+  }
+  .seikyo__main--list {
+    display: inline-block;
+    width: 89.88vw;
+    height: 2.236vw;
+    margin: 0 auto 20px;
+  }
+  .seikyo__main--products {
+    margin: 0 auto 80px;
+  }
+  .seikyo__btn {
+    border-radius: 30px;
+    margin: 20px 0;
+    font-size: 18px;
+    padding: 10px 0;
+  }
+  .seikyo__product1 {
+    margin: 0 auto 60px;
+  }
+  .seikyo__product1--price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .seikyo__product1--price01 {
+    width: 48%;
+    max-width: 48%;
+  }
+  .seikyo__product1--btn {
+    width: 50%;
+    max-width: 50%;
+  }
+  .seikyo__product2 {
+    max-width: 48%;
+  }
+  .seikyo__product3 {
+    max-width: 48%;
+  }
+  .seikyo__footer {
+    padding: 30px 0;
+    width: 100vw;
+  }
+  .seikyo__footer--links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    font-size: 12px;
+    width: 100%;
+  }
+  .seikyo__footer--links a {
+    display: block;
+    color: #fff;
+    white-space: nowrap;
+    margin-right: 10px;
+  }
+  .seikyo__footer--copy {
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    display: inline-block;
+  }
+  .seikyo__footer--inner {
+    width: 100vw;
+    margin: 0 auto;
+    padding: 0 10%;
+  }
+  .seikyo__explain {
+    width: 100vw;
+    padding: 30px 5%;
+  }
+  .seikyo__explain--inner {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .seikyo__note {
+    font-size: 12px;
+    margin: 3px 0 !important;
+  }
+  .seikyo__note2 {
+    font-size: 12px;
+    margin: 5px 0 !important;
+  }
+  .seikyo__note3 {
+    line-height: 1.4;
+    font-size: 12px;
+    margin: 10px 0 !important;
+  }
+  .seikyo__howto {
+    margin: 0 auto 30px;
+  }
+  .seikyo__seibun {
+    padding: 20px 10px;
+    margin: 0 auto 60px;
+  }
+  .seikyo__seibun p {
+    font-size: 12px;
+    margin: 10px 0 !important;
+  }
+  .seikyo__seibun--line {
+    text-decoration: underline;
+    margin: 20px 0 !important;
+    display: inline-block;
+  }
+  .seikyo__blc {
+    margin: 20px 0;
+  }
+}
