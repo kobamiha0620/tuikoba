@@ -380,3 +380,301 @@ footer * {
     margin: 20px 0;
   }
 }
+.main-content {
+  padding: 0;
+}
+
+.ofuro__header {
+  background: #fcedeb;
+  padding: 50px 0 20px;
+  width: 100vw;
+}
+
+.ofuro__subttl {
+  text-align: center;
+}
+
+.ofuro__subttl span {
+  display: inline-block;
+  background: url("https://cdn.shopify.com/s/files/1/0605/4281/2419/files/subttl_ohuro.png?v=1660546583") no-repeat 0 0;
+  background-size: 100% auto;
+  width: 410px;
+  height: 55px;
+  white-space: nowrap;
+  text-indent: -9999px;
+  margin: 0 auto;
+}
+
+.ofuro__main {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.ofuro__main--ttl {
+  text-align: center;
+  padding: 100px 0;
+  margin: 0;
+}
+
+.ofuro__main--ttl span {
+  display: inline-block;
+  background: url("https://cdn.shopify.com/s/files/1/0605/4281/2419/files/ohuton_period.svg?v=1660547460") no-repeat 0 0;
+  background-size: 100% auto;
+  width: 601px;
+  height: 301px;
+  white-space: nowrap;
+  text-indent: -9999px;
+  margin: 0 auto;
+}
+
+.ofuro__main--list {
+  display: inline-block;
+  background: url("https://cdn.shopify.com/s/files/1/0605/4281/2419/files/para30_listttl.svg") no-repeat 0 0;
+  background-size: 100% auto;
+  width: 800px;
+  height: 21px;
+  white-space: nowrap;
+  text-indent: -9999px;
+  margin: 0 auto 40px;
+}
+
+.ofuro__main--product {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ofuro__main--product li {
+  width: 31.5%;
+}
+
+.ofuro__main--cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  border-radius: 40px;
+  background: #c16265;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+.ofuro__main--cart span {
+  color: #fff;
+  font-size: 18px;
+}
+
+.ofuro__main--cart:hover {
+  opacity: 0.7;
+}
+
+.ofuro__main--price {
+  width: 194px;
+  margin: 0 auto;
+}
+
+.ofuro__main--pricebox {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.ofuro__main--notice {
+  color: #444;
+  text-indent: -1em;
+  padding-left: 1em;
+  font-size: 16px;
+  margin: 0 !important;
+}
+
+.ofuro__main--box {
+  margin: 50px 0 100px;
+}
+
+.ofuro__howto {
+  margin: 0 auto 40px;
+}
+
+.ofuro__seibun {
+  padding: 30px 40px;
+  border: solid 1px #eee;
+  margin: 0 auto 80px;
+}
+
+.ofuro__seibun p {
+  line-height: 1.4;
+  font-size: 14px;
+  margin: 10px 0 !important;
+}
+
+.ofuro__seibun--line {
+  text-decoration: underline;
+  margin: 20px 0 !important;
+  display: inline-block;
+}
+
+.ofuro__blc {
+  margin: 20px 0;
+}
+
+.ofuro__footer {
+  background: #fcedeb;
+  padding: 50px 0;
+  width: 100vw;
+}
+
+.ofuro__footer--links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  width: 600px;
+}
+
+.ofuro__footer--links a {
+  display: block;
+  color: #646465;
+}
+
+.ofuro__footer--copy {
+  color: #646465;
+  text-align: center;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.ofuro__footer--inner {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.ofuro .headMask span.head {
+  display: none;
+}
+
+#wrapper.para30 {
+  padding: 0 !important;
+  margin-top: -26px;
+}
+
+@media screen and (max-width: 767px) {
+  .ofuro__header {
+    padding: 20px 0 20px;
+    width: 100vw;
+  }
+  .ofuro__subttl span {
+    width: 46.6vw;
+    height: 5.842vw;
+    background-size: 100% auto;
+  }
+  .ofuro__main {
+    width: 100vw;
+    padding: 0 5%;
+    margin: 0;
+  }
+  .ofuro__main--ttl {
+    padding: 50px 0;
+  }
+  .ofuro__main--ttl span {
+    display: inline-block;
+    background: url("https://cdn.shopify.com/s/files/1/0605/4281/2419/files/ohuton_period.svg?v=1660547460") no-repeat 0 0;
+    background-size: 100% auto;
+    width: 85.3vw;
+    height: 44.2vw;
+    margin: 0 auto;
+  }
+  .ofuro__main--list {
+    display: inline-block;
+    background: url("https://cdn.shopify.com/s/files/1/0605/4281/2419/files/para30_listttl.svg") no-repeat 0 0;
+    background-size: 100% auto;
+    width: 89.88vw;
+    height: 2.236vw;
+    white-space: nowrap;
+    text-indent: -9999px;
+    margin: 0 auto 20px;
+  }
+  .ofuro__main--product {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .ofuro__main--product li {
+    width: 31.5%;
+  }
+  .ofuro__main--cart {
+    margin: 10px 0;
+    border-radius: 40px;
+    padding: 6px 0;
+  }
+  .ofuro__main--cart span {
+    font-size: 12px;
+  }
+  .ofuro__main--cart span span {
+    display: none;
+  }
+  .ofuro__main--price {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 5px;
+  }
+  .ofuro__main--pricebox {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .ofuro__main--notice {
+    font-size: 12px;
+    line-height: 1.4;
+    margin: 0 0 5px;
+  }
+  .ofuro__main--box {
+    margin: 20px 0 50px;
+  }
+  .ofuro__footer {
+    padding: 30px 0;
+    width: 100vw;
+  }
+  .ofuro__footer--links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    font-size: 12px;
+    width: 100%;
+  }
+  .ofuro__footer--links a {
+    display: block;
+    color: #fff;
+    white-space: nowrap;
+    margin-right: 10px;
+  }
+  .ofuro__footer--copy {
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    display: inline-block;
+  }
+  .ofuro__footer--inner {
+    width: 100vw;
+    margin: 0 auto;
+    padding: 0 10%;
+  }
+  .ofuro__howto {
+    margin: 0 auto 30px;
+  }
+  .ofuro__seibun {
+    padding: 20px 10px;
+    margin: 0 auto 60px;
+  }
+  .ofuro__seibun p {
+    font-size: 12px;
+    margin: 10px 0 !important;
+  }
+  .ofuro__seibun--line {
+    text-decoration: underline;
+    margin: 20px 0 !important;
+    display: inline-block;
+  }
+  .ofuro__blc {
+    margin: 20px 0;
+  }
+}
